@@ -1,6 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {DataServiceService} from "../../services/data-service.service";
-import {ActivatedRoute, Router} from "@angular/router";
 import {IFilm} from "../../models/films";
 
 @Component({
@@ -9,9 +7,9 @@ import {IFilm} from "../../models/films";
   styleUrls: ['./film-details.component.css']
 })
 export class FilmDetailsComponent implements OnInit {
-  response: IFilm | any;
+  emitterResponse: IFilm | any;
   @Input() public filmDet: any
-  constructor(private data: DataServiceService,private route: ActivatedRoute) { }
+  constructor() { }
   ngOnInit(): void {
   }
 }

@@ -1,4 +1,4 @@
-<div>
+<div class="containers">
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span class="example-spacer">Ticket Movie Application</span>
@@ -9,19 +9,18 @@
       </button>
     </mat-toolbar-row>
   </mat-toolbar>
-
   <mat-list class="container">
-    <mat-list-item class = 'content' style="height: 150px" *ngFor="let item of message | filter: searchText">
+    <mat-list-item class = 'content' style="height: 150px" *ngFor="let film of message | filter: searchText">
       <div class = 'container'>
-        <mat-card class="is-focusable" (click)="navigate(item)">
+        <mat-card class="is-focusable" (click)="navigate(film)">
           <mat-card-header>
             <mat-card-title>
-              <div>{{item.title}}</div>
+              <div>{{film.title}}</div>
             </mat-card-title>
           </mat-card-header>
         <mat-card-content style="padding-left: 15px" >
-          <p mat-line>{{item.director}}</p>
-          <p mat-line>{{item.producer}}</p>
+          <p mat-line>{{film.director}}</p>
+          <p mat-line>{{film.producer}}</p>
         </mat-card-content>
       </mat-card>
       </div>

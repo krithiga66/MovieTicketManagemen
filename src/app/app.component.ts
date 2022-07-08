@@ -12,7 +12,6 @@ export class AppComponent {
   constructor(public router: Router) {
   }
   handleResults(response: any){
-    console.log(response)
     this.data = response
   }
 }
