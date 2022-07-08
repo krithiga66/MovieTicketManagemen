@@ -1,0 +1,26 @@
+mat-toolbar {
+  justify-content: space-between;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.content {
+  padding: 10px;
+}
+.container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+
+}
+.content > mat-card {
+  margin-bottom: 16px;
+}
+.is-focusable {
+  cursor: pointer;
+}
+.column-label {
+  margin-right: 8px;
+  font-size: 1rem;
+}

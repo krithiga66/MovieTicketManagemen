@@ -1,0 +1,22 @@
+<div class = 'container'>
+<div class ='topNav'>
+  <mat-card style="padding: 100px" class="topMatCard">
+    <mat-card-header style="padding-left: 100px" class="topMatHeader">
+      <mat-card-title style="padding-left: 550px"><mat-icon>movie_creation</mat-icon></mat-card-title>
+      <mat-card-title style="padding-left: 500px">{{filmDet.title}}</mat-card-title>
+      <mat-card-subtitle style="padding-left: 480px">Directed By {{filmDet.director}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
+  <mat-card style="padding: 100px" >
+    <mat-card-content style="padding: 30px">
+      <p style="letter-spacing: 2px;">Produced By {{filmDet.producer}}</p>
+      <p style="letter-spacing: 1px;">Release Date {{filmDet.release_date}} </p>
+      <p style="letter-spacing: 1px;">Episode {{filmDet.episode_id}} </p>
+      <p style="letter-spacing: 0.5px;">Story Line <br> {{filmDet.opening_crawl}} </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="black" >BOOK NOW</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
